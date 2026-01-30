@@ -1,14 +1,14 @@
-# import turtle
+import turtle
 
-# screen = turtle.Screen()
-# screen.title("Turtle Test")
+screen = turtle.Screen()
+screen.title("Turtle Test")
 
-# spinny = turtle.Turtle()
-# spinny.shape("turtle")
+spinny = turtle.Turtle()
+spinny.shape("turtle")
 
-# spinny.forward(100)
+spinny.forward(100)
 
-# turtle.done()
+turtle.done()
 
 from prettytable import PrettyTable
 table = PrettyTable()

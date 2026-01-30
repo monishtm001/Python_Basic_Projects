@@ -117,5 +117,5 @@ while True:
         print("Thank you for tasting our coffee. Come again!!")
         break
 
-for type_of_coffee in coffee_menu.values():
-    for ingredients,items in type_of_coffee.items():
+# for type_of_coffee in coffee_menu.values():
+#     for ingredients,items in type_of_coffee.items():
