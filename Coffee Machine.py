@@ -94,28 +94,20 @@
 
 
 
-
-
 coffee_menu = {
     "espresso": {"water": 50, "milk": 0, "coffee": 18, "cost": 1},
     "latte": {"water": 200, "milk": 150, "coffee": 24, "cost": 2},
     "cappuccino": {"water": 250, "milk": 100, "coffee": 24, "cost": 3}
 }
 
-menu = input("What would you like to drink today? \nE for Espresso \nL for Latte \nC for Cappuccino: ").lower()
-Total_W=500
-Total_M=250
-Total_C=200
-while True:
-    print("USE\noff: stop the machine\nreport: view remaining resources")
-    user_input = input("Enter: ").lower()
-    if user_input == "report":
-        print(f"Water:{Total_W}")
-        print(f"Milk:{Total_M}")
-        print(f"Coffee Powder:{Total_C}")
-    elif user_input == "off":
-        print("Thank you for tasting our coffee. Come again!!")
-        break
+user_input=input("What would you like? \n E:Espresso \n C:Cappuccino \n L:Latte \n Report : Gives the remaining ingredients \n Off: Stops the Machine")
 
-# for type_of_coffee in coffee_menu.values():
-#     for ingredients,items in type_of_coffee.items():
+resources=coffee_menu[user_input]
+
+def print_report():
+    print(f"Water: {resources['water']}ml")
+    print(f"Milk: {resources['milk']}ml")
+    print(f"Coffee: {resources['coffee']}g")
+    print(f"Money: ${resources['money']}")
+
+print_report()
